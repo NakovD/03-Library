@@ -8,5 +8,9 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
+  command: 'npm run start',
+  port: 3000,
+  timeout: 120 * 1000, // 2 минути
+  reuseExistingServer: !process.env.CI,
   reporter: [['html', { open: 'never' }]], 
 });
