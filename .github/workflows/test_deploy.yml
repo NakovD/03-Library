@@ -30,4 +30,4 @@ jobs:
     - name: Install browsers
       run: npx playwright install --with-deps
     - name: Run UI tests
-      run: npx playwright test
+      run: npm test
