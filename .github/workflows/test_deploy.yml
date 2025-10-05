@@ -27,6 +27,7 @@ jobs:
       run: npm start &
     - name: Wait for server to be ready
       run: npx wait-on http://localhost:3000
-    - run: npx playwright install --with-deps
+    - name: Set up Playwright
+      uses: microsoft/playwright-github-action@v1
     - name: Run UI tests
       run: npx playwright test
