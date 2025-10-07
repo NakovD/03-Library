@@ -25,9 +25,9 @@ jobs:
     - name: Start API server
       run: npm run server &
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      run: npx playwright install
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npm run test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
