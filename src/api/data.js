@@ -1,6 +1,7 @@
 import * as api from './api.js';
 import { config } from './config.js';
 
+const host = config.API_URL;
 api.settings.host = config.API_URL;
 
 export const login = api.login;

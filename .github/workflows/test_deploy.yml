@@ -23,7 +23,7 @@ jobs:
     - name: Generate config file
       run: node generate-config.mjs
       env:
-        API_URL: http://localhost:3030
+        API_URL: http://localhost:3030  
     - name: Start FE server
       run: npm start &
     - name: Start API server
