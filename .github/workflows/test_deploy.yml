@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Generate config file
-      run: node generate-config.js
+      run: node generate-config.mjs
       env:
         API_URL: http://localhost:3030
     - name: Start FE server
